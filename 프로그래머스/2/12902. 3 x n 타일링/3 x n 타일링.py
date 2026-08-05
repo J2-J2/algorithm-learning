@@ -11,5 +11,4 @@ def solution(n):
             value += 2 * temp[j] % 1000000007
         temp[i] = value % 1000000007
 
-    print(temp)
     return temp[-1]  % 1000000007
