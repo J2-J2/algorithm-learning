@@ -5,11 +5,10 @@ def solution(n, l, r):
     ls = [[a, b]]
 
     ret = "1"
-    for i in range(n-1):
+    for i in range(n):
         a = a // 5
         b = b // 5+1 if b // 5 != 0 else 1
         ls.append([a, b])
-    ls.append([0, 1])
     
     ls = list(reversed(ls))
 
